@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/root/init.modem.rc:root/init.modem.rc \
 	$(LOCAL_PATH)/root/init.protect.rc:root/init.protect.rc \
 	$(LOCAL_PATH)/root/init.mt6589.usb.rc:/root/init.mt6589.usb.rc \
-	$(LOCAL_PATH)/root/adb_keys:/root/adb_keys \
+#	$(LOCAL_PATH)/root/adb_keys:/root/adb_keys \
 
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
