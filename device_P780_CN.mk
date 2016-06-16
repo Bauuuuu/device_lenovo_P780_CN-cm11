@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product-if-exists, vendor/lenovo/P780_ROW/P780_ROW-vendor.mk)
+$(call inherit-product-if-exists, vendor/lenovo/P780_CN/P780_CN-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay/
 
