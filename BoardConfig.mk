@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_FOLDER := device/lenovo/P780_ROW
+DEVICE_FOLDER := device/lenovo/P780_CN
 
--include vendor/lenovo/P780_ROW/BoardConfigVendor.mk
+-include vendor/lenovo/P780_CN/BoardConfigVendor.mk
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6589
@@ -46,7 +46,7 @@ COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_MTK := true
 BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lenovo/P780_ROW/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lenovo/P780_CN/bluetooth
 
 # power
 TARGET_POWERHAL_VARIANT := cm
@@ -55,14 +55,14 @@ TARGET_POWERHAL_VARIANT := cm
 TARGET_NO_BOOTLOADER := true
 
 # EGL settings
-BOARD_EGL_CFG := device/lenovo/P780_ROW/egl.cfg
+BOARD_EGL_CFG := device/lenovo/P780_CN/egl.cfg
 USE_OPENGL_RENDERER := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 
 # kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_FOLDER)/prebuilt/kernel
-#TARGET_KERNEL_SOURCE := kernel/lenovo/P780_ROW
-#TARGET_KERNEL_CONFIG := P780_ROW_defconfig
+#TARGET_KERNEL_SOURCE := kernel/lenovo/P780_CN
+#TARGET_KERNEL_CONFIG := P780_CN_defconfig
 #TARGET_KERNEL_VARIANT_CONFIG := msm8926-sec_matisselte_defconfig
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
@@ -103,7 +103,7 @@ TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brigh
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0/gadget/lun%d/file
 TW_MAX_BRIGHTNESS := 255
 TW_CUSTOM_BATTERY_PATH := /sys/devices/platform/battery/power_supply/battery
-TW_BACKUPS_FOLDER := /sdcard/TWRP/BACKUPS/Lenovo_P780_ROW_ROW_MT6589
+TW_BACKUPS_FOLDER := /sdcard/TWRP/BACKUPS/Lenovo_P780_CN_CN_MT6589
 
 #TW_EXCLUDE_SUPERSU := true
 #TW_NO_EXFAT := true
@@ -121,7 +121,7 @@ TW_INCLUDE_NTFS_3G := true
 
 
 # mkimage to append headers
-TARGET_MKIMAGE := device/lenovo/P780_ROW/mkimage
+TARGET_MKIMAGE := device/lenovo/P780_CN/mkimage
 TARGET_USE_BUILT_BOOTIMAGE := true
 
 # Wi-Fi
@@ -137,17 +137,17 @@ WIFI_DRIVER_FW_PATH_AP:=AP
 WIFI_DRIVER_FW_PATH_P2P:=P2P
 
 # telephony
-BOARD_RIL_CLASS := ../../../device/lenovo/P780_ROW/ril/
+BOARD_RIL_CLASS := ../../../device/lenovo/P780_CN/ril/
 
 #nvram permission fix
-TARGET_SPECIFIC_HEADER_PATH := device/lenovo/P780_ROW/include
+TARGET_SPECIFIC_HEADER_PATH := device/lenovo/P780_CN/include
 
 # allow more than one lun file
 #TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
 #SEPolicy
 BOARD_SEPOLICY_DIRS += \
-    device/lenovo/P780_ROW/sepolicy
+    device/lenovo/P780_CN/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file_contexts \
